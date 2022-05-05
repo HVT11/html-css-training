@@ -6,7 +6,7 @@
 
 ##### Step one: **Clone the code folder from github to your device**
 - Choose a path to save that file -> At that path open the command window  
-- Run command `git clone -b practice_one --single-branch https://github.com/HVT11/html-css-practice.git`  
+- Run command `git clone -b practice_one --single-branch https://github.com/HVT11/html-css-training.git`  
 ##### Step two: **Run project**
 - Change the path to the folder you just cloned to your computer  
 - Open the command window  
