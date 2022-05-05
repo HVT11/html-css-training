@@ -255,3 +255,23 @@
 .btn-mg-top {
     margin-top: 40px;
 }
+
+.download-section {
+    margin-top: 229px;
+}
+
+.download {
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download__image {
+    margin-left: 71px;
+}
+
+.picture2 {
+    width: 655px;
+    height: 434px;
+}
