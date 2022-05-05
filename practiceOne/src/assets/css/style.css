@@ -1,0 +1,51 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+}
+
+.header__brand__icon {
+    width: 41px;
+    height: 41px;
+    padding: 5px 12px 0;
+    margin-right: 12px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+}
+
+.header__brand__name {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.header__nav {
+    font-size: 1.8rem;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin: 0 20px;
+    font-weight: 400;
+    color: #1F1534;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.header__nav-item--active {
+    color: var(--black-color);
+    opacity: 1;
+    font-weight: 700;
+}
