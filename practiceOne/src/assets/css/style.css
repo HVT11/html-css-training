@@ -198,3 +198,60 @@
 .ourService-btn {
     margin-top: 25px;
 }
+
+/* Leading & download section */
+.leading-section {
+    margin-top: 220px;
+    position: relative;
+}
+
+.leading-35point {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.leading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content__heading {
+    width: 350px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: var(--black-color);
+}
+
+.content__separate {
+    width: 56px;
+    height: 2px;
+    background-color: var(--black-color);
+    border-radius: 10px;
+    margin: 26px 0 31px;
+}
+
+.content__text {
+    width: 392px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+.leading__image {
+    margin-right: 142px;
+}
+
+.picture1 {
+    width: 650px;
+    height: 477px;
+}
+
+.btn-mg-top {
+    margin-top: 40px;
+}
