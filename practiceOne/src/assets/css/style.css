@@ -117,8 +117,8 @@
 .ourService-section__55point {
     position: absolute;
     z-index: -1;
-    right: calc(20% - 174px);
-    bottom: calc(50% - 104px);
+    top: calc(50% - 36px);
+    right: 160px;
 }
 
 .ourService,
@@ -371,14 +371,14 @@
 
 .review-44point {
     position: absolute;
-    right: calc(12% - 6px);
+    right: 206px;
     top: 12px;
 }
 
 .review-55point {
     position: absolute;
-    left: calc(9% + 4px);
-    bottom: 15%;
+    left: 170px;
+    bottom: 105px;
     z-index: -1;
 }
 
@@ -483,7 +483,7 @@
 .article-section__55point {
     position: absolute;
     z-index: -1;
-    left: 140px;
+    left: 170px;
     top: 120px;
 }
 
