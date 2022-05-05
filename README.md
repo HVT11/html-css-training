@@ -1,5 +1,6 @@
 # Training HTML CSS
 ## Practice One
+>Start: 29/4/2022 -- End: 05/05/2022
 ##### Author: Huỳnh Việt Trí
 
 ### How to run the project
