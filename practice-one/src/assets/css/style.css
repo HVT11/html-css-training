@@ -160,38 +160,16 @@
     color: var(--text-color);
 }
 
-.our-service__list,
-.article__list {
-    margin-top: 58px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-
 .our-service__item-icon {
     min-height: 90px;
 }
 
-.our-service__item {
-    width: 350px;
+.card-our-service {
     height: 354px;
-    background-color: var(--white-color);
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    border-radius: 20px;
     padding: 45px;
     margin-bottom: 37px;
 }
 
-.our-service__item-heading {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 56px;
-    color: var(--black-color);
-    margin: 20px 0 0 0;
-}
 
 .our-service__item-text {
     margin: 1px 0 0 0;
@@ -199,10 +177,6 @@
     font-size: 16px;
     line-height: 28px;
     color: var(--text-color);
-}
-
-.our-service-btn {
-    margin-top: 25px;
 }
 
 /* Leading & download section */
@@ -256,10 +230,6 @@
 .picture1 {
     width: 650px;
     height: 477px;
-}
-
-.btn-mg-top {
-    margin-top: 40px;
 }
 
 .download-section {
@@ -419,12 +389,8 @@
     margin-top: 222px;
 }
 
-.article__item {
-    width: 350px;
+.card-article {
     height: 512px;
-    background-color: var(--white-color);
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    border-radius: 20px;
     margin: 0 18px;
     overflow: hidden;
 }
@@ -437,16 +403,6 @@
     margin-top: 72px;
 }
 
-.article__item-content {
-    margin: 21px 51px 35px 33px;
-}
-
-.article__item-heading {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 32px;
-}
-
 .article__item-text {
     font-weight: 300;
     font-size: 16px;
@@ -454,13 +410,7 @@
     color: var(--text-color);
 }
 
-.article__item-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.article__item-link-text {
+.card-link__text {
     font-weight: 600;
     font-size: 17px;
     line-height: 28px;
@@ -468,7 +418,7 @@
     margin-right: 10px;
 }
 
-.article__item-link-icon {
+.card-link__icon {
     width: 14.14px;
     height: 9px;
     transform: translateY(1px);
@@ -488,6 +438,7 @@
     top: 15%;
 }
 
+/* Footer */
 .footer {
     position: relative;
     height: 432px;
