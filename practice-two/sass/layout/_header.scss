@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+@import "../base/base";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__brand {
+        display: flex;
+        align-items: center;
+        &__icon {
+            width: 41px;
+            height: 41px;
+            padding: 5px 12px 0;
+            margin-right: 12px;
+            font-size: 2.6rem;
+            font-weight: 700;
+            background-color: $primary-color;
+            color: $white-color;
+            border-radius: 50%;
+        }
+        &__name {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+}
+

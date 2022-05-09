@@ -1,0 +1,21 @@
+.header {
+    &__nav {
+    font-size: 1.8rem;
+        &-list {
+            display: flex;
+            list-style: none;
+        }
+        &-item {
+            margin: 0 20px;
+            font-weight: 400;
+            color: #1F1534;
+            opacity: 0.5;
+            cursor: pointer;
+            &--active {
+                color: var(--black-color);
+                opacity: 1;
+                font-weight: 700;
+            }
+        }
+    }
+}
