@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 2</title>
+    <link rel="stylesheet" href="./style/base.css">
     <link rel="stylesheet" href="./style/header.css">
-    <link rel="stylesheet" href="./style/navbar.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="grid">
             <div class="header">
-                <div class="header__brand">
-                    <div class="header__brand__icon">T</div>
-                    <p class="header__brand__name">Trafalgar</p>
+                <div class="header-top">
+                    <div class="header-top__brand">
+                        <div class="header-top__brand__icon">T</div>
+                        <p class="header-top__brand__name">Trafalgar</p>
+                    </div>
+                    <div class="header-top__toggle">
+                        <div class="header-top__toggle-open" id="btn-open-menu" onclick="openMenu()">
+                            <i class="header-top__toggle-open fa-solid fa-bars"></i>
+                        </div>
+                        <div class="header-top__toggle-close" id="btn-close-menu" onclick="closeMenu()">
+                            <i class="header-top__toggle-close fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
                 </div>
-                <nav class="header__nav">
+                <nav class="header__nav" id="nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item header__nav-item--active">Home</li>
                         <li class="header__nav-item">Find a doctor</li>
@@ -30,5 +40,8 @@
             </div>
         </div>
     </header>
+
+    
+    <script src="./index.js"></script>
 </body>
 </html>

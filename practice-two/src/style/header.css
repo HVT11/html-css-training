@@ -1,31 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
-* {
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Mulish", sanserif;
-  box-sizing: border-box;
-}
-
-.grid {
-  position: relative;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__brand {
+@media screen and (max-width: 739px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.header-top {
   display: flex;
   align-items: center;
 }
-.header__brand__icon {
+@media screen and (max-width: 739px) {
+  .header-top {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.header-top__brand {
+  display: flex;
+  align-items: center;
+}
+.header-top__brand__icon {
   width: 41px;
   height: 41px;
   padding: 5px 12px 0;
@@ -36,9 +35,73 @@ html {
   color: #fff;
   border-radius: 50%;
 }
-.header__brand__name {
+.header-top__brand__name {
   font-size: 2.4rem;
   font-weight: 700;
+}
+.header-top__toggle {
+  font-size: 2.8rem;
+}
+.header-top__toggle-open {
+  display: none;
+}
+@media screen and (max-width: 739px) {
+  .header-top__toggle-open {
+    display: block;
+  }
+  .header-top__toggle-open--disable {
+    display: none;
+  }
+}
+.header-top__toggle-close {
+  display: none;
+}
+@media screen and (max-width: 739px) {
+  .header-top__toggle-close--active {
+    display: block;
+  }
+}
+.header__nav {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 739px) {
+  .header__nav {
+    width: 100%;
+    z-index: 1;
+    display: none;
+  }
+  .header__nav--active {
+    display: block;
+  }
+}
+.header__nav-list {
+  display: flex;
+  list-style: none;
+}
+@media screen and (max-width: 739px) {
+  .header__nav-list {
+    display: block;
+    padding-left: 0;
+    margin: 6px 0;
+    width: 100%;
+  }
+}
+.header__nav-item {
+  padding: 10px 12px;
+  font-weight: 400;
+  color: #1F1534;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.header__nav-item--active {
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+@media screen and (max-width: 739px) {
+  .header__nav-item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Mulish", sanserif;
+  box-sizing: border-box;
+}
+
+.grid {
+  position: relative;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hidden-item {
+  display: none;
+}
+
+.actice-item {
+  display: block;
+}
+
+/*# sourceMappingURL=base.css.map */

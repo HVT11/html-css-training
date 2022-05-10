@@ -5,6 +5,11 @@
   display: flex;
   list-style: none;
 }
+@media screen and (max-width: 739px) {
+  .header__nav-list {
+    display: block;
+  }
+}
 .header__nav-item {
   margin: 0 20px;
   font-weight: 400;
@@ -13,7 +18,7 @@
   cursor: pointer;
 }
 .header__nav-item--active {
-  color: var(--black-color);
+  color: #000;
   opacity: 1;
   font-weight: 700;
 }

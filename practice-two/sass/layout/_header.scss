@@ -1,28 +1,97 @@
 @import "../abstracts/variables";
-@import "../base/base";
+@import "../abstracts/mixins";
 
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__brand {
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &-top{
         display: flex;
         align-items: center;
-        &__icon {
-            width: 41px;
-            height: 41px;
-            padding: 5px 12px 0;
-            margin-right: 12px;
-            font-size: 2.6rem;
-            font-weight: 700;
-            background-color: $primary-color;
-            color: $white-color;
-            border-radius: 50%;
+        @include mobile {
+            width: 100%;
+            justify-content: space-between;
         }
-        &__name {
-            font-size: 2.4rem;
-            font-weight: 700;
+        &__brand {
+            display: flex;
+            align-items: center;
+            &__icon {
+                width: 41px;
+                height: 41px;
+                padding: 5px 12px 0;
+                margin-right: 12px;
+                font-size: 2.6rem;
+                font-weight: 700;
+                background-color: $primary-color;
+                color: $white-color;
+                border-radius: 50%;
+            }
+            &__name {
+                font-size: 2.4rem;
+                font-weight: 700;
+            }
+        }
+        &__toggle {
+            font-size: 2.8rem;
+            &-open {
+                display: none;
+                @include mobile {
+                    display: block;
+                    &--disable {
+                        display: none;
+                    }
+                }
+            }
+            &-close {
+                display: none;
+                @include mobile {
+                    &--active {
+                        display: block;
+                    }
+                }
+            }
         }
     }
+    &__nav {
+        font-size: 1.8rem;
+        @include mobile {
+            width: 100%;
+            z-index: 1;
+            display: none;
+            &--active {
+                display: block;
+            }
+        }
+            &-list {
+                display: flex;
+                list-style: none;
+                @include mobile {
+                    display: block;
+                    padding-left: 0;
+                    margin: 6px 0;
+                    width: 100%;
+                }
+            }
+            &-item {
+                padding: 10px 12px;
+                font-weight: 400;
+                color: #1F1534;
+                opacity: 0.5;
+                cursor: pointer;
+                &--active {
+                    color: $black-color;
+                    opacity: 1;
+                    font-weight: 700;
+                }
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
 }
 
