@@ -1,6 +1,16 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
+
+.header-sticky {
+    @include mobile {
+        position: sticky;
+        z-index: 2;
+        top: 0;
+        background-color: $white-color;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;

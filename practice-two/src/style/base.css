@@ -16,12 +16,12 @@ html {
   margin: 0 auto;
 }
 
-.hidden-item {
-  display: none;
+.margin-top-medium {
+  margin-top: 20px;
 }
 
-.actice-item {
-  display: block;
+.margin-top-large {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=base.css.map */
