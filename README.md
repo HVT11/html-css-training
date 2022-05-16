@@ -17,7 +17,7 @@
 - Hold `ctrl` and `click` on the successfully created localhost link to view the website
 
 ## Practice Two
->Start: 29/4/2022 -- End: 
+>Start: 10/5/2022 -- End: 
 ##### Author: Huỳnh Việt Trí
 
 ### How to run the project
