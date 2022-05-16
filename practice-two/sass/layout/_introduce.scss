@@ -27,14 +27,22 @@
             margin: 0;
             margin-top: 20px;
         }
+        @include tablet {
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
         &-heading {
             width: 420px;
             font-size: 4.8rem;
             line-height: 56px;
             font-weight: 700;
             margin: 0;
-            @include mobile {
+            @include mobile-and-tablet {
                 width: 100%;
+            }
+            @include tablet {
+                font-size: 3.6rem;
             }
         }
         &-text {
@@ -43,13 +51,16 @@
             font-weight: 300;
             font-size: 21px;
             line-height: 32px;
-            @include mobile {
+            @include mobile-and-tablet {
                 width: 100%;
+            }
+            @include tablet {
+                font-size: 1.6rem;
             }
         }
         &-btn {
-            background-color: $primary-color;
-            color: $white-color;
+            background-color: $primary-color !important;
+            color: $white-color !important;
             font-weight: 700;
             font-size: 18px;
             margin: 25px 0px 45px;
@@ -58,7 +69,7 @@
     &__img {
         width: 693px;
         height: 598px;
-        @include mobile {
+        @include mobile-and-tablet {
             width: 100%;
             height: auto;
             & img {

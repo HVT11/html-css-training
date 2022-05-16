@@ -1,0 +1,57 @@
+@import '../abstracts/variables';
+
+.card-list {
+    margin-top: 58px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 350px;
+    background-color: $white-color;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    &-img-top-small {
+        min-height: 95px;
+    }
+    &-img-top-large {
+        width: 100%;
+    }
+    &-body {
+        display: flex;
+        flex-direction: column;
+        &-large {
+            margin: 21px 51px 35px 33px;
+        }
+    }
+    &-title {
+        margin-top: 20px;
+        font-weight: 700;
+        color: $black-color;
+        &-small {
+            margin: 0;
+            font-size: 21px;
+            line-height: 32px;
+        }
+        &-medium {
+            margin-bottom: 0;
+            font-size: 24px;
+            line-height: 56px;
+        }
+    }
+    &-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: $text-color;
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+}
