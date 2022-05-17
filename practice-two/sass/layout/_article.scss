@@ -1,0 +1,87 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../components/button";
+@import "../components/card";
+
+.article-section {
+    position: relative;
+    margin-top: 222px;
+    &__background-element {
+        position: absolute;
+        z-index: -1;
+        right: -16%;
+        bottom: 9%;
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__background-point {
+        position: absolute;
+        z-index: -1;
+        left: -1%;
+        top: 15%;
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-heading {
+            font-weight: 700;
+            font-size: 36px;
+            margin: 0;
+            @include mobile {
+                text-align: center;
+            }
+        }
+    }
+    &__separate {
+        width: 56px;
+        height: 2px;
+        background-color: $black-color;
+        margin: 26px 0 33px;
+    }
+    &__item {
+        &-image {
+            width: 100%;
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            color: $text-color;
+        }
+    }
+    &-btn {
+        margin-top: 72px;
+    }
+}
+
+.card-article {
+    height: 512px;
+    margin: 0 18px;
+    overflow: hidden;
+    @include mobile-and-tablet {
+        margin-bottom: 30px;
+    }
+    @include mobile {
+        width: 100%;
+        height: auto;
+    }
+}
