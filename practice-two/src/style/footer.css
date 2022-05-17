@@ -1,0 +1,132 @@
+.footer {
+  position: relative;
+  height: 432px;
+  margin-top: 200px;
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+@media screen and (max-width: 1023px) {
+  .footer {
+    height: auto;
+  }
+}
+.footer-section {
+  padding-top: 110px;
+  display: flex;
+}
+@media screen and (max-width: 1023px) {
+  .footer-section {
+    flex-direction: column;
+    padding: 20px 10px 0;
+  }
+}
+.footer-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1023px) {
+  .footer-info {
+    flex-wrap: wrap;
+  }
+}
+.footer-info__element {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info__heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+  padding-top: 12px;
+  color: #fff;
+}
+.footer-info__list {
+  padding: 0;
+  list-style: none;
+}
+.footer-info__item {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.footer-branch-logo {
+  display: flex;
+  align-items: center;
+}
+.footer-branch-logo__icon {
+  text-align: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #458FF6;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  padding: 4px;
+}
+.footer-branch-logo__name {
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+.footer-branch-sologan {
+  margin-top: 12px;
+  width: 379px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+@media screen and (max-width: 739px) {
+  .footer-branch-sologan {
+    width: 100%;
+  }
+}
+.footer-branch-copyright {
+  margin-top: 23px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+.footer__background-inside-point {
+  position: absolute;
+  left: -25%;
+  bottom: -12%;
+}
+@media screen and (max-width: 739px) {
+  .footer__background-inside-point {
+    display: none;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer__background-inside-point {
+    left: 0;
+    bottom: 0;
+  }
+}
+.footer__background-outside-point {
+  position: absolute;
+  z-index: -1;
+  right: -12%;
+  top: -19%;
+}
+@media screen and (max-width: 739px) {
+  .footer__background-outside-point {
+    display: none;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer__background-outside-point {
+    right: 0;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,119 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.footer {
+    position: relative;
+    height: 432px;
+    margin-top: 200px;
+    background: $linear-background-color;
+    @include mobile-and-tablet {
+        height: auto;
+    }
+    &-section {
+        padding-top: 110px;
+        display: flex;
+        @include mobile-and-tablet {
+            flex-direction: column;
+            padding: 20px 10px 0;
+
+        }
+    }
+    &-info {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        @include mobile-and-tablet {
+            flex-wrap: wrap;
+        }
+        &__element {
+            display: flex;
+            flex-direction: column;
+        }
+        &__heading {
+            margin: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 60px;
+            padding-top: 12px;
+            color: $white-color;
+        }
+        &__list {
+            padding: 0;
+            list-style: none;
+        }
+        &__item {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+            color: $white-color;
+            margin-bottom: 8px;
+        }
+    }
+    &-branch-logo {
+        display: flex;
+        align-items: center;
+        &__icon {
+            text-align: center;
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            background-color: $white-color;
+            color: $primary-color;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+            padding: 4px;
+        }
+        &__name {
+            margin-left: 12px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: $white-color;
+        }
+    }
+    &-branch-sologan {
+        margin-top: 12px;
+        width: 379px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: $white-color;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &-branch-copyright {
+        margin-top: 23px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: $white-color;
+    }
+    &__background-inside-point {
+        position: absolute;
+        left: -25%;
+        bottom: -12%;
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__background-outside-point {
+        position: absolute;
+        z-index: -1;
+        right: -12%;
+        top: -19%;
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            right: 0;
+            top: 0;
+        }
+    }
+
+}
