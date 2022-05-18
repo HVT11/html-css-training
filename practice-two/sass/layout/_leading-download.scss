@@ -1,8 +1,3 @@
-@import "../abstracts/mixins";
-@import "../abstracts/variables";
-@import "../components/button";
-
-
 .content {
     @include mobile {
         text-align: center;

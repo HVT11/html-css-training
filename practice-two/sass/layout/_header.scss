@@ -1,7 +1,3 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-
-
 .header-sticky {
     @include mobile {
         position: sticky;

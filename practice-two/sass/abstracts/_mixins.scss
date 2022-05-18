@@ -5,6 +5,12 @@
     }
 }
 
+@mixin hide-scroll {
+    @media screen and (min-width: 1024px) and (max-width: 1599px) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width: 739px){
         @content;

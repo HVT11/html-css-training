@@ -1,18 +1,23 @@
 // Base
-@import "base/base";
-@import "base/normalize";
 @import "base/typography";
-
-// Layout
-@import "layout/header";
-@import "layout/footer";
-@import "layout/introduce";
+@import "base/normalize";
+@import "abstracts/mixins";
+@import "base/base";
 
 // Abstract
 @import "abstracts/variables";
 @import "abstracts/colors";
-@import "abstracts/mixins";
 
 // Components
 @import "components/button";
 @import "components/card";
+
+// Layout
+@import "layout/header";
+@import "layout/introduce";
+@import "layout/our-service";
+@import "layout/leading-download";
+@import "layout/review";
+@import "layout/article";
+@import "layout/our-service";
+@import "layout/footer";
