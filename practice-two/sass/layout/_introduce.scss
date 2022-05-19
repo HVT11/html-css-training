@@ -1,6 +1,9 @@
 .introduce-section {
     position: relative;
     margin-top: 70px;
+    @include hide-scroll {
+        overflow: hidden;
+    }
 }
 
 .introduction-background-point {

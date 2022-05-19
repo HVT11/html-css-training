@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mobile-and-tablet {
+        padding: 0 10px;
+    }
     @include mobile {
         flex-direction: column;
         align-items: flex-start;

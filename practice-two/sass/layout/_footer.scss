@@ -6,6 +6,9 @@
     @include mobile-and-tablet {
         height: auto;
     }
+    @include hide-scroll {
+        overflow: hidden;
+    }
     &-section {
         padding-top: 110px;
         display: flex;

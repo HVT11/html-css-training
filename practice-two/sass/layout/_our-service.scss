@@ -1,6 +1,9 @@
 .our-service-section {
     margin-top: 192px;
     position: relative;
+    @include hide-scroll {
+        overflow: hidden;
+    }
     &__background-element {
         position: absolute;
         z-index: -1;

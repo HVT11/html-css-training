@@ -1,12 +1,12 @@
 // Media queries
 @mixin tablet {
-    @media screen and (min-width: 740px) and (max-width: 1023px) {
+    @media screen and (min-width: 740px) and (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin hide-scroll {
-    @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    @media screen and (min-width: 1025px) and (max-width: 1599px) {
         @content;
     }
 }
@@ -18,7 +18,7 @@
 }
 
 @mixin mobile-and-tablet {
-    @media screen and (max-width: 1023px){
+    @media screen and (max-width: 1024px){
         @content;
     }
 }
