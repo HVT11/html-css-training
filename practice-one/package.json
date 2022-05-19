@@ -1,4 +1,10 @@
 {
+  "name": "practice-one",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build"
+  },
   "devDependencies": {
     "parcel": "^2.5.0"
   }
