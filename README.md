@@ -34,8 +34,8 @@
 ##### Step two: **Run project**
 - Change the path to the folder you just cloned to your computer 
 >`cd html-css-training/practice-two`
-- Install Parcel (If you already have parcel installed, skip this step)
->`npm install parcel`
+- Install npm
+>`npm install`
 - Run start project
 > `npm run start`
 - Hold `ctrl` and `click` on the successfully created localhost link to view the website
