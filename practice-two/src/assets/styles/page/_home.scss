@@ -1,0 +1,5 @@
+.app {
+    @include mobile-and-tablet {
+        padding: 0 12px;
+    }
+}

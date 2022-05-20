@@ -1,0 +1,36 @@
+.nav {
+    font-size: 1.8rem;
+    @include mobile {
+        width: 100%;
+        z-index: 1;
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+        @include mobile {
+            display: block;
+            padding-left: 0;
+            margin: 6px 0;
+            width: 100%;
+        }
+    }
+    &__item {
+        padding: 10px 12px;
+        font-weight: 400;
+        color: #1F1534;
+        opacity: 0.5;
+        cursor: pointer;
+        &--active {
+            color: $black-color;
+            opacity: 1;
+            font-weight: 700;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+}

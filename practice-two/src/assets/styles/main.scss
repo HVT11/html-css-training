@@ -11,9 +11,13 @@
 // Components
 @import "components/button";
 @import "components/card";
+@import "components/title";
+@import "components/separate";
+@import "components/description";
 
 // Layout
 @import "layout/header";
+@import "layout/navbar";
 @import "layout/introduce";
 @import "layout/our-service";
 @import "layout/leading-download";
@@ -21,3 +25,6 @@
 @import "layout/article";
 @import "layout/our-service";
 @import "layout/footer";
+
+// Page
+@import "page/home";

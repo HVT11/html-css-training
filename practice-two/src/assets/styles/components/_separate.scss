@@ -1,0 +1,9 @@
+.separate {
+    width: 56px;
+    height: 2px;
+    background-color: $black-color;
+    margin: 26px 0 33px;
+    &--color-white {
+        background-color: $white-color;
+    }
+}

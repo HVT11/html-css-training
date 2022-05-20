@@ -1,0 +1,22 @@
+.description {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
+    &--large {
+        width: 952px;
+        text-align: center;
+    }
+    &--small {
+        width: 392px;
+        @include mobile-and-tablet {
+            font-size: 14px;
+            line-height: 22px;
+            width: 100%;
+        }
+    }
+    @include mobile-and-tablet {
+        width: 100%;
+    }
+}
