@@ -18,53 +18,52 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    &-top{
+    &__top{
         display: flex;
         align-items: center;
         @include mobile {
             width: 100%;
             justify-content: space-between;
         }
-        &__brand {
-            display: flex;
-            align-items: center;
-            &__icon {
-                width: 41px;
-                height: 41px;
-                padding: 5px 12px 0;
-                margin-right: 12px;
-                font-size: 2.6rem;
-                font-weight: 700;
-                background-color: $primary-color;
-                color: $white-color;
-                border-radius: 50%;
-            }
-            &__name {
-                font-size: 2.4rem;
-                font-weight: 700;
-            }
+    }
+    &__brand {
+        display: flex;
+        align-items: center;
+        &__icon {
+            width: 41px;
+            height: 41px;
+            padding: 5px 12px 0;
+            margin-right: 12px;
+            font-size: 2.6rem;
+            font-weight: 700;
+            background-color: $primary-color;
+            color: $white-color;
+            border-radius: 50%;
         }
-        &__toggle {
-            font-size: 2.8rem;
-            &-open {
-                display: none;
-                @include mobile {
-                    display: block;
-                    &--disable {
-                        display: none;
-                    }
-                }
-            }
-            &-close {
-                display: none;
-                @include mobile {
-                    &--active {
-                        display: block;
-                    }
-                }
-            }
+        &__name {
+            font-size: 2.4rem;
+            font-weight: 700;
         }
     }
-    
+    &__toggle {
+        font-size: 2.8rem;
+        &-open {
+            display: none;
+            @include mobile {
+                display: block;
+                &--disable {
+                    display: none;
+                }
+            }
+        }
+        &-close {
+            display: none;
+            @include mobile {
+                &--active {
+                    display: block;
+                }
+            }
+        }
+    }   
 }
 

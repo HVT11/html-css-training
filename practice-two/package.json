@@ -4,8 +4,8 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
-  }
-  ,"devDependencies": {
+  },
+  "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
     "sass": "^1.51.0"

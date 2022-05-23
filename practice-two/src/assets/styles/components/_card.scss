@@ -13,17 +13,17 @@
     background-color: $white-color;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
-    &-img-top-small {
+    &__img-top-small {
         min-height: 95px;
     }
-    &-img-top-large {
+    &__img-top-large {
         width: 100%;
     }
     &__body {
         display: flex;
         flex-direction: column;
         &--large {
-            margin: 21px 51px 35px 33px;
+            padding: 21px 51px 35px 33px;
         }
     }
     &__title {

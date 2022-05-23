@@ -1,3 +1,5 @@
+
+
 function openMenu() {
     document.getElementById('nav').classList.add('nav--active')
     document.getElementById('btn-open-menu').classList.add('header-top__toggle-open--disable')

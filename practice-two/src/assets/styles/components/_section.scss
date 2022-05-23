@@ -1,0 +1,19 @@
+.section {
+    display: flex;
+    align-items: center;
+    &--col {
+        flex-direction: column;
+    }
+    &--row {
+        justify-content: space-around;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+    &--mg-left {
+        margin-left: 140px;
+        @include mobile-and-tablet {
+            margin: 0;
+        }
+    }
+}
