@@ -38,3 +38,15 @@ html {
         margin-top: 20px !important;
     }
 }
+
+.text-align-left {
+    @include tablet {
+        text-align: left !important;
+    }
+}
+
+.text-align-right {
+    @include tablet {
+        text-align: right;
+    }
+}

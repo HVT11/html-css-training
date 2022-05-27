@@ -1,15 +1,13 @@
-
-
 function openMenu() {
     document.getElementById('nav').classList.add('nav--active')
-    document.getElementById('btn-open-menu').classList.add('header-top__toggle-open--disable')
-    document.getElementById('btn-close-menu').classList.add('header-top__toggle-close--active')
+    document.getElementById('btn-open-menu').classList.add('header__toggle-open--disable')
+    document.getElementById('btn-close-menu').classList.add('header__toggle-close--active')
 }
 
 function closeMenu() {
     document.getElementById('nav').classList.remove('nav--active')
-    document.getElementById('btn-open-menu').classList.remove('header-top__toggle-open--disable')
-    document.getElementById('btn-close-menu').classList.remove('header-top__toggle-close--active')
+    document.getElementById('btn-open-menu').classList.remove('header__toggle-open--disable')
+    document.getElementById('btn-close-menu').classList.remove('header__toggle-close--active')
 }
 
 window.onscroll = function() {scrollFunction()};

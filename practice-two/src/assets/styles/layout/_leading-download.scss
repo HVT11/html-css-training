@@ -1,15 +1,3 @@
-.content {
-    @include mobile {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    @include tablet {
-        width: 100%;
-    }
-}
-
 .leading-section {
     margin-top: 220px;
     position: relative;
@@ -54,15 +42,6 @@
     }
 }
 
-.picture1 {
-    width: 650px;
-    height: 477px;
-    @include mobile-and-tablet {
-        width: 100%;
-        height: auto;
-    }
-}
-
 .download-section {
     margin-top: 229px;
     @include mobile {
@@ -87,14 +66,5 @@
             width: 100%;
             margin: 0;
         }
-    }
-}
-
-.picture2 {
-    width: 655px;
-    height: 434px;
-    @include mobile-and-tablet {
-        width: 100%;
-        height: auto;
     }
 }

@@ -51,10 +51,10 @@
             display: none;
             @include mobile {
                 display: block;
-                &--disable {
-                    display: none;
-                }
+            &--disable {
+                display: none;
             }
+        }
         }
         &-close {
             display: none;

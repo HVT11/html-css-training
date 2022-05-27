@@ -65,15 +65,4 @@
             margin: 25px 0px 45px;
         }
     }
-    &__img {
-        width: 693px;
-        height: 598px;
-        @include mobile-and-tablet {
-            width: 100%;
-            height: auto;
-            & img {
-                width: 100%;
-            }
-        }
-    }
 }
