@@ -9,6 +9,8 @@
 @import "base/base";
 
 // Components
+@import "components/container";
+@import "components/section";
 @import "components/button";
 @import "components/card";
 @import "components/title";
@@ -20,12 +22,6 @@
 // Layout
 @import "layout/header";
 @import "layout/navbar";
-@import "layout/introduce";
-@import "layout/our-service";
-@import "layout/leading-download";
-@import "layout/review";
-@import "layout/article";
-@import "layout/our-service";
 @import "layout/footer";
 
 // Page

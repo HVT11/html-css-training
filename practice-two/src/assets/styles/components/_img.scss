@@ -18,4 +18,52 @@
         width: 100%;
         height: auto;
     }
+    &-background {
+        &__point-small-left {
+            position: absolute;
+            left: -16%;
+            top: 0;
+        }
+        &__cloud-left {
+            position: absolute;
+            z-index: -1;
+            left: -17%;
+            top: -3%;
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                width: 95%;
+                top: 0;
+                left: 0;
+            }
+        }
+        &__point-large-left {
+            position: absolute;
+            z-index: -1;
+            top: 46%;
+            right: -2%;
+            @include mobile {
+                display: none;
+            }
+    
+            @include tablet {
+                right: 5%;
+                top: 62%;
+            }
+        }
+        &__point-small-right {
+            position: absolute;
+            bottom: -20%;
+            right: -15%;
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                bottom: -50%;
+                right: 0;
+            }
+        }
+    }
 }
+

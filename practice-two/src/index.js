@@ -1,3 +1,5 @@
+import * as bootstrap from 'bootstrap';
+
 function openMenu() {
     document.getElementById('nav').classList.add('nav--active')
     document.getElementById('btn-open-menu').classList.add('header__toggle-open--disable')

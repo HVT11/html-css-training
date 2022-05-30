@@ -1,31 +1,4 @@
-.header-sticky {
-    @include mobile {
-        position: sticky;
-        z-index: 2;
-        top: 0;
-        background-color: $white-color;
-    }
-}
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include mobile-and-tablet {
-        padding: 0 10px;
-    }
-    @include mobile {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    &__top{
-        display: flex;
-        align-items: center;
-        @include mobile {
-            width: 100%;
-            justify-content: space-between;
-        }
-    }
     &__brand {
         display: flex;
         align-items: center;
@@ -44,26 +17,12 @@
             font-size: 2.4rem;
             font-weight: 700;
         }
+    }  
+    @include mobile-and-tablet {
+        position: sticky;
+        z-index: 2;
+        top: 0;
+        background-color: $white-color;
     }
-    &__toggle {
-        font-size: 2.8rem;
-        &-open {
-            display: none;
-            @include mobile {
-                display: block;
-            &--disable {
-                display: none;
-            }
-        }
-        }
-        &-close {
-            display: none;
-            @include mobile {
-                &--active {
-                    display: block;
-                }
-            }
-        }
-    }   
 }
 

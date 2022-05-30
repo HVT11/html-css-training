@@ -65,3 +65,22 @@
         }
     }
 }
+
+.card-our-service {
+    height: 354px;
+    padding: 45px;
+    margin-bottom: 37px;
+}
+
+.card-article {
+    height: 512px;
+    margin: 0 18px;
+    overflow: hidden;
+    @include mobile-and-tablet {
+        margin-bottom: 30px;
+    }
+    @include mobile {
+        width: 100%;
+        height: auto;
+    }
+}

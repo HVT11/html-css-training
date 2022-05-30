@@ -5,39 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 2</title>
+    <link rel="stylesheet" href="../scss/custom.scss">
     <link rel="stylesheet" href="./assets/styles/main.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
-    <header class="header-sticky">
-        <div class="grid">
-            <div class="header">
-                <div class="header__top">
-                    <div class="header__brand">
-                        <div class="header__brand__icon">T</div>
-                        <p class="header__brand__name">Trafalgar</p>
-                    </div>
-                    <div class="header__toggle">
-                        <div class="header__toggle-open" id="btn-open-menu" onclick="openMenu()">
-                            <i class="header__toggle-open fa-solid fa-bars"></i>
-                        </div>
-                        <div class="header__toggle-close" id="btn-close-menu" onclick="closeMenu()">
-                            <i class="header__toggle-close fa-solid fa-xmark"></i>
-                        </div>
-                    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg grid" aria-label="Ninth navbar example">
+            <div class="container-fluid">
+                <div class="header__brand">
+                    <div class="header__brand__icon">T</div>
+                    <p class="header__brand__name">Trafalgar</p>
                 </div>
-                <nav class="nav" id="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item nav__item--active">Home</li>
-                        <li class="nav__item">Find a doctor</li>
-                        <li class="nav__item">Apps</li>
-                        <li class="nav__item">Testimonials</li>
-                        <li class="nav__item">About us</li>
-                    </ul>
-                </nav>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="btn-toogle fa-solid fa-bars"></i>
+              </button>
+        
+              <div class="navbar-collapse collapse nav" id="navbars">
+                <ul class="navbar-nav nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a class='nav__item__link' href="">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">Find a doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">Apps</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">About us</a>
+                    </li>
+                </ul>
+              </div>
             </div>
-        </div>
+        </nav>
         <a href="#top" id="myBtn" class="btn-move-top" title="Go to top">
             <i class="fa-solid fa-arrow-up"></i>
             TOP
@@ -46,9 +51,9 @@
 
     <div class="app" id="top">
         <!-- Introduce section -->
-        <div class="introduce-section" >
+        <section class="container" >
             <div class="grid">
-                <img src="./assets/images/35point.png" alt="" class="introduction-background-point">
+                <img src="./assets/images/35point.png" alt="" class="img-background__point-small-left">
                 <div class="introduce">
                     <div class="introduce__content">
                         <h1 class="introduce__content-heading">Virtual healthcare for you</h1>
@@ -62,13 +67,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Our Service section -->
-        <div class="our-service-section">
+        <section class="container">
             <div class="grid">
-                <img src="../src/assets/images/bg element.png" alt="" class="our-service-section__background-element">
-                <img src="../src/assets/images/55point.png" alt="" class="our-service-section__background-point">
+                <img src="../src/assets/images/bg element.png" alt="" class="img-background__cloud-left">
+                <img src="../src/assets/images/55point.png" alt="" class="img-background__point-large-left">
                 <div class="our-service">
                     <div class="our-service__header">
                         <h2 class="title">Our services</h2>
@@ -136,12 +141,12 @@
                     <button class="btn">Learn more</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Leading section -->
-        <div class="leading-section">
+        <section class="container">
             <div class="grid">
-                <div class="leading">
+                <div class="section section--row">
                     <div class="leading__image">
                         <img src="./assets/images/trafalgar-illustration sec02 1.png" alt="" class="img img--medium">
                     </div>
@@ -152,14 +157,14 @@
                         <button class="btn margin-top-large">Learn more</button>
                     </div>
                 </div>
-                <img src="./assets/images/35point.png" alt="" class="leading-background-point">
+                <img src="./assets/images/35point.png" alt="" class="img-background__point-small-right">
             </div>
-        </div>
+        </section>
 
         <!-- Download section -->
-        <div class="download-section">
+        <section class="container">
             <div class="grid">
-                <div class="download">
+                <div class="section section--row section--mg-left">
                     <div class="content">
                         <h2 class="title text-align-left">Download our mobile apps</h2>
                         <div class="separate"></div>
@@ -172,10 +177,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Review section -->
-        <div class="review-section">
+        <section class="container">
             <div class="grid">
                 <img src="./assets/images/44point.png" alt="" class="review-background-point-inside">
                 <img src="./assets/images/55point.png" alt="" class="review-background-point-outside">
@@ -207,10 +212,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Article section -->
-        <div class="article-section">
+        <section class="container">
             <div class="grid">
                 <img src="../src/assets/images/55point.png" alt="" class="article-section__background-point">
                 <img src="../src/assets/images/element.png" alt="" class="article-section__background-element">
@@ -258,8 +263,7 @@
                     <button class="btn">View all</button>
                 </div>
             </div>
-        </div>
-
+        </section>
     </div>
 
     <!-- Footer -->
@@ -311,6 +315,6 @@
             </div>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
