@@ -32,6 +32,8 @@
 - Run command 
 >`git clone https://github.com/HVT11/html-css-training.git`  
 ##### Step two: **Run project**
+- Checkout branch practice-two 
+>`git checkout practice-two`
 - Change the path to the folder you just cloned to your computer 
 >`cd html-css-training/practice-two`
 - Install npm
