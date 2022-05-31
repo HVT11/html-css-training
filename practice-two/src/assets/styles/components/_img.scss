@@ -21,7 +21,7 @@
     @include tablet {
         width: 100%;
     }
-    &-background {
+    &-bg {
         position: absolute;
         @include mobile {
             display: none;

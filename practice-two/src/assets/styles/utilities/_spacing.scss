@@ -1,0 +1,29 @@
+.margin-bottom-large {
+    margin-bottom: 80px !important;
+    @include mobile-and-tablet {
+        margin-bottom: 30px !important;
+    }
+}
+
+.margin-bottom-medium {
+    margin-bottom: 40px !important;
+    
+}
+
+.margin-top-medium {
+    margin-top: 20px;
+}
+
+.margin-top-large {
+    margin-top: 40px !important;
+    @include mobile-and-tablet {
+        margin-top: 20px !important;
+    }
+}
+
+.margin-right-medium {
+    margin-right: 30px;
+    @include tablet {
+        margin-right: 40px;
+    }
+}

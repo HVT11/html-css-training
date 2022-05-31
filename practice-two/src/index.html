@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 2</title>
-    <link rel="stylesheet" href="../scss/custom.scss">
     <link rel="stylesheet" href="./assets/styles/main.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -19,7 +18,7 @@
                     <p class="header__brand__name">Trafalgar</p>
                 </div>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="btn-toogle fa-solid fa-bars"></i>
+                <i class="btn--small fa-solid fa-bars"></i>
               </button>
         
               <div class="navbar-collapse collapse nav" id="navbars">
@@ -43,7 +42,7 @@
               </div>
             </div>
         </nav>
-        <a href="#top" id="myBtn" class="btn-move-top" title="Go to top">
+        <a href="#top" id="myBtn" class="btn--medium" title="Go to top">
             <i class="fa-solid fa-arrow-up"></i>
             TOP
         </a> 
@@ -53,13 +52,11 @@
         <!-- Introduce section -->
         <section class="container" >
             <div class="grid">
-                <img src="./assets/images/35point.png" alt="" class="img-background img-background__point-small-left">
-                <div class="section section--wrap-reverse">
+                <img src="./assets/images/35point.png" alt="" class="img-bg img-bg__point-small-left">
+                <div class="flex flex--wrap-reverse">
                     <div class="content content--large">
                         <h1 class="title title--large">Virtual healthcare for you</h1>
-                        <p class="description description--xl">
-                            Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
-                        </p>
+                        <p class="description description--xl">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
                         <button class="btn btn--primary">Consult today</button>
                     </div>
                     <div class="img img--large">
@@ -72,9 +69,9 @@
         <!-- Our Service section -->
         <section class="container">
             <div class="grid">
-                <img src="../src/assets/images/bg element.png" alt="" class="img-background img-background__cloud-left">
-                <img src="../src/assets/images/55point.png" alt="" class="img-background img-background__point-large-right">
-                <div class="section section--col">
+                <img src="../src/assets/images/bg element.png" alt="" class="img-bg img-bg__cloud-left">
+                <img src="../src/assets/images/55point.png" alt="" class="img-bg img-bg__point-large-right">
+                <div class="flex flex--col">
                     <h2 class="title title--medium">Our services</h2>
                     <div class="separate"></div>
                     <p class="description description--large">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
@@ -93,45 +90,35 @@
                             <img src="./assets/images/onl-pharmacy.png" alt="" class="card__img-top-small">
                             <div class="card__body">
                                 <h3 class="card__title card__title--medium">Online pharmacy</h3>
-                                <p class="card__description">
-                                    Buy  your medicines with our mobile application with a simple delivery system
-                                </p>
+                                <p class="card__description">Buy  your medicines with our mobile application with a simple delivery system</p>
                             </div>
                         </li>
                         <li class="card card--small">
                             <img src="./assets/images/Consultation.png" alt="" class="card__img-top-small">
                             <div class="card__body">
                                 <h3 class="card__title card__title--medium">Consultation</h3>
-                                <p class="card__description">
-                                    Free consultation with our trusted doctors and get the best recomendations
-                                </p>
+                                <p class="card__description">Free consultation with our trusted doctors and get the best recomendations</p>
                             </div>
                         </li>
                         <li class="card card--small">
                             <img src="./assets/images/Frame (3).png" alt="" class="card__img-top-small">
                             <div class="card__body">
                                 <h3 class="card__title card__title--medium">Detail info</h3>
-                                <p class="card__description">
-                                    Free consultation with our trusted doctors and get the best recomendations
-                                </p>
+                                <p class="card__description">Free consultation with our trusted doctors and get the best recomendations</p>
                             </div>
                         </li>
                         <li class="card card--small">
                             <img src="./assets/images/Frame (4).png" alt="" class="card__img-top-small">
                             <div class="card__body">
                                 <h3 class="card__title card__title--medium">Emergency care</h3>
-                                <p class="card__description">
-                                    You can get 24/7 urgent care for your-self or your children and your lovely family
-                                </p>
+                                <p class="card__description">You can get 24/7 urgent care for your-self or your children and your lovely family</p>
                             </div>
                         </li>
                         <li class="card card--small">
                             <img src="./assets/images/Frame (5).png" alt="" class="card__img-top-small">
                             <div class="card__body">
                                 <h3 class="card__title card__title--medium">Tracking</h3>
-                                <p class="card__description">
-                                    Track and save your medical history and health data
-                                </p>
+                                <p class="card__description">Track and save your medical history and health data</p>
                             </div>
                         </li>
                     </ul>
@@ -144,7 +131,7 @@
         <!-- Leading section -->
         <section class="container">
             <div class="grid">
-                <div class="section section--row">
+                <div class="flex flex--row">
                     <div class="img margin-right-medium">
                         <img src="./assets/images/trafalgar-illustration sec02 1.png" alt="" class="img img--medium">
                     </div>
@@ -155,14 +142,14 @@
                         <button class="btn margin-top-large">Learn more</button>
                     </div>
                 </div>
-                <img src="./assets/images/35point.png" alt="" class="img-background img-background__point-small-right">
+                <img src="./assets/images/35point.png" alt="" class="img-bg img-bg__point-small-right">
             </div>
         </section>
 
         <!-- Download section -->
         <section class="container">
             <div class="grid">
-                <div class="section section--row section--wrap-reverse section--mg-left">
+                <div class="flex flex--row flex--wrap-reverse flex--mg-left">
                     <div class="content content--medium">
                         <h2 class="title title--medium text-align-left">Download our mobile apps</h2>
                         <div class="separate"></div>
@@ -180,10 +167,10 @@
         <!-- Review section -->
         <section class="container">
             <div class="grid">
-                <img src="./assets/images/44point.png" alt="" class="img-background img-background__point-inside">
-                <img src="./assets/images/55point.png" alt="" class="img-background img-background__point-outside">
-                <div class="section section--col">
-                    <div class="section section--col section--color-primary">
+                <img src="./assets/images/44point.png" alt="" class="img-bg img-bg__point-inside">
+                <img src="./assets/images/55point.png" alt="" class="img-bg img-bg__point-outside">
+                <div class="carousel">
+                    <div class="carousel carousel-item">
                         <h2 class="title title--medium title--color-white margin-top-large">What our customer are saying</h2>
                         <div class="separate separate--color-white margin-bottom-large"></div>
                         <div class="content content--small">
@@ -199,14 +186,14 @@
                     </div>
 
                     <div class="btn-group">
-                        <img src="./assets/images/angle-left.png" alt="" class="btn-angle-left">
-                        <div class="btn-dot">
-                            <div class="btn-point btn-point--active"></div>
-                            <div class="btn-point"></div>
-                            <div class="btn-point"></div>
-                            <div class="btn-point"></div>
+                        <div class="btn-angle btn-angle--left"></div>
+                        <div class="btn-poin-wrap">
+                            <div class="btn-point-wrap__element btn-point-wrap__element--active"></div>
+                            <div class="btn-point-wrap__element"></div>
+                            <div class="btn-point-wrap__element"></div>
+                            <div class="btn-point-wrap__element"></div>
                         </div>
-                        <img src="./assets/images/angle-right.png" alt="" class="btn-angle-right">
+                        <div class="btn-angle btn-angle--right"></div>
                     </div>
                 </div>
             </div>
@@ -215,9 +202,9 @@
         <!-- Article section -->
         <section class="container">
             <div class="grid">
-                <img src="../src/assets/images/55point.png" alt="" class="img-background img-background__point-large-left">
-                <img src="../src/assets/images/element.png" alt="" class="img-background img-background__cloud-right">
-                <div class="section section--col">
+                <img src="../src/assets/images/55point.png" alt="" class="img-bg img-bg__point-large-left">
+                <img src="../src/assets/images/element.png" alt="" class="img-bg img-bg__cloud-right">
+                <div class="flex flex--col">
                     <h2 class="title title--medium">Check out our latest article</h2>
                     <div class="separate"></div>
 
@@ -229,7 +216,7 @@
                                 <p class="card__description">In this case, the role of the health laboratory is very important to do a disease detection...</p>
                                 <a href="" class="card__link">
                                     <p class="card__link__text">Read more</p>
-                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card__link__icon">
+                                    <div class="card__link__icon"></div>
                                 </a>
                             </div>
                         </li>
@@ -240,7 +227,7 @@
                                 <p class="card__description">Herbal medicine is very widely used at this time because of its very good for your health...</p>
                                 <a href="" class="card__link">
                                     <p class="card__link__text">Read more</p>
-                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card__link__icon">
+                                    <div class="card__link__icon"></div>
                                 </a>
                             </div>
                         </li>
@@ -251,7 +238,7 @@
                                 <p class="card__description">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
                                 <a href="" class="card__link">
                                     <p class="card__link__text">Read more</p>
-                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card__link__icon">
+                                    <div class="card__link__icon"></div>
                                 </a>
                             </div>
                         </li>

@@ -2,7 +2,5 @@
     position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
-    @include hide-scroll {
-        overflow: hidden;
-    }
+    @include hide-scroll;
 }

@@ -1,5 +1,11 @@
-$primary-color: #458FF6;
+//Color
+$primary-color: #458ff6;
 $white-color : #fff;
 $black-color: #000;
-$text-color: #7D7987;
-$linear-background-color: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+$text-color: #7d7987;
+$linear-background-color: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+
+//Image Url
+$angle-left: url(".././images/angle-left.png");
+$angle-right: url(".././images/angle-right.png");
+$angle-right-sm: url(".././images/angle-right-mini.png");

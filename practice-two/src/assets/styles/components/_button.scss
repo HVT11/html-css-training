@@ -15,7 +15,7 @@
     }
 }
 
-.btn-move-top {
+.btn--medium {
     display: none;
     position: fixed;
     bottom: 2%;
@@ -36,8 +36,8 @@
     }
 }
 
-.btn-toogle {
-    font-size: 2.8rem;
+.btn--small {
+    font-size: 28px;
 }
 
 .btn-group {
@@ -52,17 +52,28 @@
     }
 }
 
-.btn-angle-left {
-    opacity: 0.3;
+.btn-angle {
+    width: 30px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &--left {
+        background-image: $angle-left;
+        opacity: 0.3;
+    }
+    &--right {
+        background-image: $angle-right;
+        opacity: 1;
+    }
 }
 
-.btn-dot {
+.btn-poin-wrap {
     display: flex;
     width: 30%;
     justify-content: space-around;
 }
 
-.btn-point {
+.btn-point-wrap__element {
     width: 10px;
     height: 10px;
     border-radius: 50%;

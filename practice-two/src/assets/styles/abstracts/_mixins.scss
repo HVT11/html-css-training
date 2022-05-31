@@ -1,12 +1,12 @@
 // Media queries
-@mixin tablet {
-    @media screen and (min-width: 740px) and (max-width: 1024px) {
+@mixin mobile-and-tablet {
+    @media screen and (max-width: 1024px){
         @content;
     }
 }
 
-@mixin hide-scroll {
-    @media screen and (min-width: 1025px) and (max-width: 1599px) {
+@mixin tablet {
+    @media screen and (min-width: 740px) and (max-width: 1024px) {
         @content;
     }
 }
@@ -17,8 +17,10 @@
     }
 }
 
-@mixin mobile-and-tablet {
-    @media screen and (max-width: 1024px){
-        @content;
+
+@mixin hide-scroll {
+    @media screen and (min-width: 1025px) and (max-width: 1599px) {
+        overflow: hidden;
     }
 }
+
