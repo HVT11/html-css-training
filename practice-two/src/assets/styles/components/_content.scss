@@ -1,0 +1,52 @@
+.content {
+    @include mobile {
+        text-align: center;
+    }
+    &--medium {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include tablet {
+            width: 100%;
+        }
+    }
+    &--large {
+        margin-right: 110px;
+        @include mobile-and-tablet {
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+    &--small {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+    &--xs {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    &--xxs {
+        margin-right: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include tablet {
+            margin-right: 20px;
+        }
+        @include mobile {
+            margin-right: 0;
+        }
+    }
+}

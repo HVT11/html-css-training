@@ -5,130 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 2</title>
+    <link rel="stylesheet" href="../scss/custom.scss">
     <link rel="stylesheet" href="./assets/styles/main.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
-    <header class="header-sticky" id="top">
-        <div class="grid">
-            <div class="header">
-                <div class="header-top">
-                    <div class="header-top__brand">
-                        <div class="header-top__brand__icon">T</div>
-                        <p class="header-top__brand__name">Trafalgar</p>
-                    </div>
-                    <div class="header-top__toggle">
-                        <div class="header-top__toggle-open" id="btn-open-menu" onclick="openMenu()">
-                            <i class="header-top__toggle-open fa-solid fa-bars"></i>
-                        </div>
-                        <div class="header-top__toggle-close" id="btn-close-menu" onclick="closeMenu()">
-                            <i class="header-top__toggle-close fa-solid fa-xmark"></i>
-                        </div>
-                    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg grid" aria-label="Ninth navbar example">
+            <div class="container-fluid">
+                <div class="header__brand">
+                    <div class="header__brand__icon">T</div>
+                    <p class="header__brand__name">Trafalgar</p>
                 </div>
-                <nav class="header__nav" id="nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item header__nav-item--active">Home</li>
-                        <li class="header__nav-item">Find a doctor</li>
-                        <li class="header__nav-item">Apps</li>
-                        <li class="header__nav-item">Testimonials</li>
-                        <li class="header__nav-item">About us</li>
-                    </ul>
-                </nav>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="btn-toogle fa-solid fa-bars"></i>
+              </button>
+        
+              <div class="navbar-collapse collapse nav" id="navbars">
+                <ul class="navbar-nav nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a class='nav__item__link' href="">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">Find a doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">Apps</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class='nav__item__link' href="">About us</a>
+                    </li>
+                </ul>
+              </div>
             </div>
-        </div>
+        </nav>
         <a href="#top" id="myBtn" class="btn-move-top" title="Go to top">
             <i class="fa-solid fa-arrow-up"></i>
             TOP
         </a> 
     </header>
 
-    <div class="app">
+    <div class="app" id="top">
         <!-- Introduce section -->
-        <div class="introduce-section" >
+        <section class="container" >
             <div class="grid">
-                <img src="./assets/images/35point.png" alt="" class="introduction-background-point">
-                <div class="introduce">
-                    <div class="introduce__content">
-                        <h1 class="introduce__content-heading">Virtual healthcare for you</h1>
-                        <p class="introduce__content-text">
+                <img src="./assets/images/35point.png" alt="" class="img-background img-background__point-small-left">
+                <div class="section section--wrap-reverse">
+                    <div class="content content--large">
+                        <h1 class="title title--large">Virtual healthcare for you</h1>
+                        <p class="description description--xl">
                             Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
                         </p>
-                        <button class="btn introduce__content-btn">Consult today</button>
+                        <button class="btn btn--primary">Consult today</button>
                     </div>
-                    <div class="introduce__img">
+                    <div class="img img--large">
                         <img src="./assets/images/trafalgar-header-illustration1.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Our Service section -->
-        <div class="our-service-section">
+        <section class="container">
             <div class="grid">
-                <img src="../src/assets/images/bg element.png" alt="" class="our-service-section__background-element">
-                <img src="../src/assets/images/55point.png" alt="" class="our-service-section__background-point">
-                <div class="our-service">
-                    <div class="our-service__header">
-                        <h2 class="our-service__header-heading">Our services</h2>
-                        <div class="our-service__separate"></div>
-                        <p class="our-service__header-text">
-                            We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
-                        </p>
-                    </div>
+                <img src="../src/assets/images/bg element.png" alt="" class="img-background img-background__cloud-left">
+                <img src="../src/assets/images/55point.png" alt="" class="img-background img-background__point-large-right">
+                <div class="section section--col">
+                    <h2 class="title title--medium">Our services</h2>
+                    <div class="separate"></div>
+                    <p class="description description--large">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
 
                     <ul class="card-list">
-                        <li class="card card-our-service">
-                            <img src="./assets/images/search.png" alt="" class="card-img-top-small">
-                            <div class="card-body">
-                                <h3 class="card-title-medium">Search doctor</h3>
-                                <p class="card-text">
+                        <li class="card card--small">
+                            <img src="./assets/images/search.png" alt="" class="card__img-top-small">
+                            <div class="card__body">
+                                <h3 class="card__title card__title--medium">Search doctor</h3>
+                                <p class="card__description">
                                     Choose your doctor from thousands of specialist, general, and trusted hospitals
                                 </p>
                             </div>
                         </li>
-                        <li class="card card-our-service">
-                            <img src="./assets/images/onl-pharmacy.png" alt="" class="card-img-top-small">
-                            <div class="card-body">
-                                <h3 class="card-title card-title-medium">Online pharmacy</h3>
-                                <p class="card-text">
+                        <li class="card card--small">
+                            <img src="./assets/images/onl-pharmacy.png" alt="" class="card__img-top-small">
+                            <div class="card__body">
+                                <h3 class="card__title card__title--medium">Online pharmacy</h3>
+                                <p class="card__description">
                                     Buy  your medicines with our mobile application with a simple delivery system
                                 </p>
                             </div>
                         </li>
-                        <li class="card card-our-service">
-                            <img src="./assets/images/Consultation.png" alt="" class="card-img-top-small">
-                            <div class="card-body">
-                                <h3 class="card-title card-title-medium">Consultation</h3>
-                                <p class="card-text">
+                        <li class="card card--small">
+                            <img src="./assets/images/Consultation.png" alt="" class="card__img-top-small">
+                            <div class="card__body">
+                                <h3 class="card__title card__title--medium">Consultation</h3>
+                                <p class="card__description">
                                     Free consultation with our trusted doctors and get the best recomendations
                                 </p>
                             </div>
                         </li>
-                        <li class="card card-our-service">
-                            <img src="./assets/images/Frame (3).png" alt="" class="card-img-top-small">
-                            <div class="card-body">
-                                <h3 class="card-title card-title-medium">Detail info</h3>
-                                <p class="card-text">
+                        <li class="card card--small">
+                            <img src="./assets/images/Frame (3).png" alt="" class="card__img-top-small">
+                            <div class="card__body">
+                                <h3 class="card__title card__title--medium">Detail info</h3>
+                                <p class="card__description">
                                     Free consultation with our trusted doctors and get the best recomendations
                                 </p>
                             </div>
                         </li>
-                        <li class="card card-our-service">
-                            <img src="./assets/images/Frame (4).png" alt="" class="card-img-top-small">
-                            <div class="card-body">
-                                <h3 class="card-title card-title-medium">Emergency care</h3>
-                                <p class="card-text">
+                        <li class="card card--small">
+                            <img src="./assets/images/Frame (4).png" alt="" class="card__img-top-small">
+                            <div class="card__body">
+                                <h3 class="card__title card__title--medium">Emergency care</h3>
+                                <p class="card__description">
                                     You can get 24/7 urgent care for your-self or your children and your lovely family
                                 </p>
                             </div>
                         </li>
-                        <li class="card card-our-service">
-                            <img src="./assets/images/Frame (5).png" alt="" class="card-img-top-small">
-                            <div class="card-body">
-                                <h3 class="card-title card-title-medium">Tracking</h3>
-                                <p class="card-text">
+                        <li class="card card--small">
+                            <img src="./assets/images/Frame (5).png" alt="" class="card__img-top-small">
+                            <div class="card__body">
+                                <h3 class="card__title card__title--medium">Tracking</h3>
+                                <p class="card__description">
                                     Track and save your medical history and health data
                                 </p>
                             </div>
@@ -138,133 +139,119 @@
                     <button class="btn">Learn more</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Leading section -->
-        <div class="leading-section">
+        <section class="container">
             <div class="grid">
-                <div class="leading">
-                    <div class="leading__image">
-                        <img src="./assets/images/trafalgar-illustration sec02 1.png" alt="" class="picture1">
+                <div class="section section--row">
+                    <div class="img margin-right-medium">
+                        <img src="./assets/images/trafalgar-illustration sec02 1.png" alt="" class="img img--medium">
                     </div>
-                    <div class="content">
-                        <h2 class="content__heading">Leading healthcare providers</h2>
-                        <div class="content__separate"></div>
-                        <p class="content__text">
-                            Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver
-                        </p>
+                    <div class="content content--medium">
+                        <h2 class="title title--medium text-align-left">Leading healthcare providers</h2>
+                        <div class="separate"></div>
+                        <p class="description description--small">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
                         <button class="btn margin-top-large">Learn more</button>
                     </div>
                 </div>
-                <img src="./assets/images/35point.png" alt="" class="leading-background-point">
+                <img src="./assets/images/35point.png" alt="" class="img-background img-background__point-small-right">
             </div>
-        </div>
+        </section>
 
         <!-- Download section -->
-        <div class="download-section">
+        <section class="container">
             <div class="grid">
-                <div class="download">
-                    <div class="content">
-                        <h2 class="content__heading">Download our mobile apps</h2>
-                        <div class="content__separate"></div>
-                        <p class="content__text">
-                            Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
-                        </p>
-                        <button class="btn margin-top-large">
-                            Download
-                            <img src="./assets/images/angle-down.png" alt="" class="download-icon">
+                <div class="section section--row section--wrap-reverse section--mg-left">
+                    <div class="content content--medium">
+                        <h2 class="title title--medium text-align-left">Download our mobile apps</h2>
+                        <div class="separate"></div>
+                        <p class="description description--small">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+                        <button class="btn margin-top-large">Download<img src="./assets/images/angle-down.png" alt="" class="download-icon">
                         </button>
                     </div>
-                    <div class="download__image">
-                        <img src="./assets/images/trafalgar-illustration sec03 1.png" alt="" class="picture2">
+                    <div class="img">
+                        <img src="./assets/images/trafalgar-illustration sec03 1.png" alt="" class="img img--medium">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Review section -->
-        <div class="review-section">
+        <section class="container">
             <div class="grid">
-                <img src="./assets/images/44point.png" alt="" class="review-background-point-inside">
-                <img src="./assets/images/55point.png" alt="" class="review-background-point-outside">
-                <div class="review">
-                    <div class="review-main">
-                        <h2 class="review-heading">What our customer are saying</h2>
-                        <div class="review-separate"></div>
-                        <div class="review-form">
-                            <div class="review-info">
-                                <img src="./assets/images/avatar.png" alt="" class="review-info__avatar">
-                                <div class="review-info__name-with-position">
-                                    <h3 class="review-info__name">Edward Newgate</h3>
-                                    <p class="review-info__position">Founder Circle</p>
+                <img src="./assets/images/44point.png" alt="" class="img-background img-background__point-inside">
+                <img src="./assets/images/55point.png" alt="" class="img-background img-background__point-outside">
+                <div class="section section--col">
+                    <div class="section section--col section--color-primary">
+                        <h2 class="title title--medium title--color-white margin-top-large">What our customer are saying</h2>
+                        <div class="separate separate--color-white margin-bottom-large"></div>
+                        <div class="content content--small">
+                            <div class="content content--xs">
+                                <img src="./assets/images/avatar.png" alt="" class="avatar">
+                                <div class="content content--xxs">
+                                    <h3 class="name">Edward Newgate</h3>
+                                    <p class="position">Founder Circle</p>
                                 </div>
                             </div>
-                            <p class="review-content">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”<p>
+                            <p class="description description--xs">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”<p>
                         </div>
                     </div>
 
-                    <div class="review-controls">
-                        <img src="./assets/images/angle-left.png" alt="" class="angle-left">
-                        <div class="dot">
-                            <div class="point point--active"></div>
-                            <div class="point"></div>
-                            <div class="point"></div>
-                            <div class="point"></div>
+                    <div class="btn-group">
+                        <img src="./assets/images/angle-left.png" alt="" class="btn-angle-left">
+                        <div class="btn-dot">
+                            <div class="btn-point btn-point--active"></div>
+                            <div class="btn-point"></div>
+                            <div class="btn-point"></div>
+                            <div class="btn-point"></div>
                         </div>
-                        <img src="./assets/images/angle-right.png" alt="" class="angle-right">
+                        <img src="./assets/images/angle-right.png" alt="" class="btn-angle-right">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Article section -->
-        <div class="article-section">
+        <section class="container">
             <div class="grid">
-                <img src="../src/assets/images/55point.png" alt="" class="article-section__background-point">
-                <img src="../src/assets/images/element.png" alt="" class="article-section__background-element">
-                <div class="article">
-                    <div class="article__header">
-                        <h2 class="article__header-heading">Check out our latest article</h2>
-                        <div class="article__separate"></div>
-                    </div>
+                <img src="../src/assets/images/55point.png" alt="" class="img-background img-background__point-large-left">
+                <img src="../src/assets/images/element.png" alt="" class="img-background img-background__cloud-right">
+                <div class="section section--col">
+                    <h2 class="title title--medium">Check out our latest article</h2>
+                    <div class="separate"></div>
 
                     <ul class="card-list">
-                        <li class="card card-article">
-                            <img src="./assets/images/image 2.png" alt="" class="card-img-top-large">
-                            <div class="card-body card-body-large">
-                                <h3 class="card-title card-title-small">Disease detection, check up in the laboratory</h3>
-                                <p class="card-text">
-                                    In this case, the role of the health laboratory is very important to do a disease detection...
-                                </p>
-                                <a href="" class="card-link">
-                                    <p class="card-link__text">Read more</p>
-                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card-link__icon">
+                        <li class="card card--medium">
+                            <img src="./assets/images/image 2.png" alt="" class="card__img-top-large">
+                            <div class="card__body card__body--large">
+                                <h3 class="card__title card__title--small">Disease detection, check up in the laboratory</h3>
+                                <p class="card__description">In this case, the role of the health laboratory is very important to do a disease detection...</p>
+                                <a href="" class="card__link">
+                                    <p class="card__link__text">Read more</p>
+                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card__link__icon">
                                 </a>
                             </div>
                         </li>
-                        <li class="card card-article">
-                            <img src="./assets/images/image 2 (1).png" alt="" class="card-img-top-large">
-                            <div class="card-body card-body-large">
-                                <h3 class="card-title card-title-small">Herbal medicines that are safe for consumption</h3>
-                                <p class="card-text">
-                                    Herbal medicine is very widely used at this time because of its very good for your health...
-                                </p>
-                                <a href="" class="card-link">
-                                    <p class="card-link__text">Read more</p>
-                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card-link__icon">
+                        <li class="card card--medium">
+                            <img src="./assets/images/image 2 (1).png" alt="" class="card__img-top-large">
+                            <div class="card__body card__body--large">
+                                <h3 class="card__title card__title--small">Herbal medicines that are safe for consumption</h3>
+                                <p class="card__description">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                                <a href="" class="card__link">
+                                    <p class="card__link__text">Read more</p>
+                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card__link__icon">
                                 </a>
                             </div>
                         </li>
-                        <li class="card card-article">
-                            <img src="./assets/images/image 3.png" alt="" class="card-img-top-large">
-                            <div class="card-body card-body-large">
-                                <h3 class="card-title card-title-small">Natural care for healthy facial skin</h3>
-                                <p class="card-text">
-                                    A healthy lifestyle should start from now and also for your skin health. There are some...
-                                </p>
-                                <a href="" class="card-link">
-                                    <p class="card-link__text">Read more</p>
-                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card-link__icon">
+                        <li class="card card--medium">
+                            <img src="./assets/images/image 3.png" alt="" class="card__img-top-large">
+                            <div class="card__body card__body--large">
+                                <h3 class="card__title card__title--small">Natural care for healthy facial skin</h3>
+                                <p class="card__description">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+                                <a href="" class="card__link">
+                                    <p class="card__link__text">Read more</p>
+                                    <img src="./assets/images/angle-right-mini.png" alt="" class="card__link__icon">
                                 </a>
                             </div>
                         </li>
@@ -272,8 +259,7 @@
                     <button class="btn">View all</button>
                 </div>
             </div>
-        </div>
-
+        </section>
     </div>
 
     <!-- Footer -->
@@ -325,6 +311,6 @@
             </div>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>

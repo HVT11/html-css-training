@@ -1,5 +1,3 @@
-@import "../abstracts/variables";
-
 .btn {
     width: 200px;
     height: 56px;
@@ -10,6 +8,11 @@
     font-weight: 700;
     font-size: 18px;
     cursor: pointer;
+    &--primary {
+        background-color: $primary-color;
+        color: $white-color;
+        margin: 25px 0px 45px;
+    }
 }
 
 .btn-move-top {
@@ -30,5 +33,42 @@
     }
     &:hover {
         background-color: #555;
+    }
+}
+
+.btn-toogle {
+    font-size: 2.8rem;
+}
+
+.btn-group {
+    margin-top: 43px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include mobile-and-tablet {
+        margin-top: 20px;
+        width: 85%;
+    }
+}
+
+.btn-angle-left {
+    opacity: 0.3;
+}
+
+.btn-dot {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.btn-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    opacity: 0.3;
+    &--active {
+        opacity: 1;
     }
 }

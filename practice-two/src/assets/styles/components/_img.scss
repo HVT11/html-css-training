@@ -1,0 +1,89 @@
+.img {
+    &--large {
+        width: 693px;
+        height: 598px;
+        & img {
+            width: 100%;
+        }
+    }
+    &--medium {
+        width: 650px;
+        height: 477px;
+    }
+    &--small {
+        width: 655px;
+        height: 434px;
+    }
+    @include mobile-and-tablet {
+        width: 100%;
+        height: auto;
+    }
+    @include tablet {
+        width: 100%;
+    }
+    &-background {
+        position: absolute;
+        @include mobile {
+            display: none;
+        }
+        &__cloud-left {
+            z-index: -1;
+            left: -17%;
+            top: -3%;
+            @include tablet {
+                width: 95%;
+                top: 0;
+                left: 0;
+            }
+        }
+        &__cloud-right {
+            z-index: -1;
+            right: -16%;
+            bottom: 9%;
+            @include tablet {
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &__point-small-left {
+            left: -16%;
+            top: 0;
+        }
+        &__point-large-right {
+            z-index: -1;
+            right: -2%;
+            top: 47%;
+            @include tablet {
+                right: 5%;
+                top: 62%;
+            }
+        }
+        &__point-large-left {
+            z-index: -1;
+            left: -1%;
+            top: 16%;
+            @include tablet {
+                left: 0;
+                top: 0;
+            }
+        }
+        &__point-small-right {
+            bottom: -20%;
+            right: -15%;
+            @include tablet {
+                bottom: -50%;
+                right: 0;
+            }
+        }
+        &__point-inside {
+            right: 2%;
+            top: 3%;
+        }
+        &__point-outside {
+            z-index: -1;
+            left: -1%;
+            bottom: 22%;
+        }
+    }
+}
+

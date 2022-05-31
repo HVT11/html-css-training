@@ -9,15 +9,20 @@
 @import "base/base";
 
 // Components
+@import "components/container";
+@import "components/section";
 @import "components/button";
 @import "components/card";
+@import "components/title";
+@import "components/separate";
+@import "components/description";
+@import "components/img";
+@import "components/content";
 
 // Layout
 @import "layout/header";
-@import "layout/introduce";
-@import "layout/our-service";
-@import "layout/leading-download";
-@import "layout/review";
-@import "layout/article";
-@import "layout/our-service";
+@import "layout/navbar";
 @import "layout/footer";
+
+// Page
+@import "page/home";

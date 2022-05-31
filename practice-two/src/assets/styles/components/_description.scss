@@ -1,0 +1,47 @@
+.description {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
+    &--large {
+        width: 952px;
+        text-align: center;
+    }
+    &--small {
+        width: 392px;
+        @include mobile-and-tablet {
+            font-size: 14px;
+            line-height: 22px;
+            width: 100%;
+        }
+    }
+    &--xl {
+        margin-top: 20px;
+        width: 440px;
+        font-size: 21px;
+        line-height: 32px;
+        @include tablet {
+            font-size: 1.6rem;
+        }
+    }
+    &--xs {
+        width: 420px;
+        height: 120px;
+        font-weight: 400;
+        font-size: 19px;
+        color: rgba(255, 255, 255, 0.9);
+        @include mobile-and-tablet {
+            height: auto;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 10px 0 10px;
+        }
+        @include tablet {
+            width: 50%;
+        }
+    }
+    @include mobile-and-tablet {
+        width: 100%;
+    }
+}
