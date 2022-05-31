@@ -18,51 +18,71 @@
         width: 100%;
         height: auto;
     }
+    @include tablet {
+        width: 100%;
+    }
     &-background {
-        &__point-small-left {
-            position: absolute;
-            left: -16%;
-            top: 0;
+        position: absolute;
+        @include mobile {
+            display: none;
         }
         &__cloud-left {
-            position: absolute;
             z-index: -1;
             left: -17%;
             top: -3%;
-            @include mobile {
-                display: none;
-            }
             @include tablet {
                 width: 95%;
                 top: 0;
                 left: 0;
             }
         }
-        &__point-large-left {
-            position: absolute;
+        &__cloud-right {
             z-index: -1;
-            top: 46%;
-            right: -2%;
-            @include mobile {
-                display: none;
+            right: -16%;
+            bottom: 9%;
+            @include tablet {
+                right: 0;
+                bottom: 0;
             }
-    
+        }
+        &__point-small-left {
+            left: -16%;
+            top: 0;
+        }
+        &__point-large-right {
+            z-index: -1;
+            right: -2%;
+            top: 47%;
             @include tablet {
                 right: 5%;
                 top: 62%;
             }
         }
+        &__point-large-left {
+            z-index: -1;
+            left: -1%;
+            top: 16%;
+            @include tablet {
+                left: 0;
+                top: 0;
+            }
+        }
         &__point-small-right {
-            position: absolute;
             bottom: -20%;
             right: -15%;
-            @include mobile {
-                display: none;
-            }
             @include tablet {
                 bottom: -50%;
                 right: 0;
             }
+        }
+        &__point-inside {
+            right: 2%;
+            top: 3%;
+        }
+        &__point-outside {
+            z-index: -1;
+            left: -1%;
+            bottom: 22%;
         }
     }
 }

@@ -16,6 +16,31 @@
             width: 100%;
         }
     }
+    &--xl {
+        margin-top: 20px;
+        width: 440px;
+        font-size: 21px;
+        line-height: 32px;
+        @include tablet {
+            font-size: 1.6rem;
+        }
+    }
+    &--xs {
+        width: 420px;
+        height: 120px;
+        font-weight: 400;
+        font-size: 19px;
+        color: rgba(255, 255, 255, 0.9);
+        @include mobile-and-tablet {
+            height: auto;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 10px 0 10px;
+        }
+        @include tablet {
+            width: 50%;
+        }
+    }
     @include mobile-and-tablet {
         width: 100%;
     }

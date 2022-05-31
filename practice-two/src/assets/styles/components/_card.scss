@@ -13,6 +13,23 @@
     background-color: $white-color;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
+    &--small {
+        height: 354px;
+        padding: 45px;
+        margin-bottom: 37px;
+    }
+    &--medium {
+        height: 512px;
+        margin: 0 18px;
+        overflow: hidden;
+        @include mobile-and-tablet {
+            margin-bottom: 30px;
+        }
+        @include mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
     &__img-top-small {
         min-height: 95px;
     }
@@ -63,24 +80,5 @@
             height: 9px;
             transform: translateY(1px);
         }
-    }
-}
-
-.card-our-service {
-    height: 354px;
-    padding: 45px;
-    margin-bottom: 37px;
-}
-
-.card-article {
-    height: 512px;
-    margin: 0 18px;
-    overflow: hidden;
-    @include mobile-and-tablet {
-        margin-bottom: 30px;
-    }
-    @include mobile {
-        width: 100%;
-        height: auto;
     }
 }

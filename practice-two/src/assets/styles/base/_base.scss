@@ -39,6 +39,12 @@ html {
     }
 }
 
+.margin-right-medium {
+    @include tablet {
+        margin-right: 40px;
+    }
+}
+
 .text-align-left {
     @include tablet {
         text-align: left !important;
