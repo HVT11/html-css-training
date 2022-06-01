@@ -35,7 +35,7 @@
 - Change the path to the folder you just cloned to your computer 
 >`cd html-css-training/practice-two`
 - Checkout branch practice-two 
->`git checkout practice-two`
+>`git checkout feature/practice-two`
 - Install npm
 >`npm install`
 - Run start project
