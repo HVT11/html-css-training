@@ -88,30 +88,4 @@
         line-height: 28px;
         color: $white-color;
     }
-    &__background-inside-point {
-        position: absolute;
-        left: -25%;
-        bottom: -12%;
-        @include mobile {
-            display: none;
-        }
-        @include tablet {
-            left: 0;
-            bottom: 0;
-        }
-    }
-    &__background-outside-point {
-        position: absolute;
-        z-index: -1;
-        right: -12%;
-        top: -19%;
-        @include mobile {
-            display: none;
-        }
-        @include tablet {
-            right: 0;
-            top: 0;
-        }
-    }
-
 }
