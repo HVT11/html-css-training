@@ -31,10 +31,12 @@
 - Choose a path to save that file -> At that path open the command window  
 - Run command 
 >`git clone https://github.com/HVT11/html-css-training.git`  
-##### Step two: **Run project**
+##### Step two: **Run project** 
 - Change the path to the folder you just cloned to your computer 
 >`cd html-css-training/practice-two`
-- Install Parcel (If you already have parcel installed, skip this step)
+- Checkout branch practice-two 
+>`git checkout practice-two`
+- Install npm
 >`npm install`
 - Run start project
 > `npm run start`
