@@ -26,8 +26,7 @@
             margin-bottom: 30px;
         }
         @include mobile {
-            width: 100%;
-            height: auto;
+            @include fullwidth;
         }
     }
     &__img-top-small {
@@ -72,13 +71,15 @@
             font-weight: 600;
             font-size: 17px;
             line-height: 28px;
-            color: #4089ED;
+            color: $blue-color;
             margin-right: 10px;
         }
         &__icon {
             width: 14.14px;
             height: 9px;
             transform: translateY(1px);
+            background-image: $angle-right-sm;
+            @include bg-cover-norep;
         }
     }
 }

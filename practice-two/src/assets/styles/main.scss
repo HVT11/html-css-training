@@ -1,7 +1,14 @@
 // Abstract
 @import "abstracts/variables";
-@import "abstracts/colors";
 @import "abstracts/mixins";
+
+// Utilities
+@import "utilities/spacing";
+@import "utilities/text";
+@import "utilities/flex";
+
+//Vendor
+@import "vendor/bootstrap";
 
 // Base
 @import "base/typography";
@@ -9,8 +16,7 @@
 @import "base/base";
 
 // Components
-@import "components/container";
-@import "components/section";
+@import "components/navbar";
 @import "components/button";
 @import "components/card";
 @import "components/title";
@@ -18,10 +24,13 @@
 @import "components/description";
 @import "components/img";
 @import "components/content";
+@import "components/carousel";
+@import "components/avatar";
 
 // Layout
+@import "layout/container";
+@import "layout/grid";
 @import "layout/header";
-@import "layout/navbar";
 @import "layout/footer";
 
 // Page

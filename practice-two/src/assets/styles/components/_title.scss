@@ -4,7 +4,7 @@
     font-weight: 700;
     line-height: 56px;
     &--medium {
-        font-size: 36px;
+        font-size: $title;
         @include mobile-and-tablet {
             text-align: center;
         }
@@ -14,12 +14,12 @@
     }
     &--large {
         width: 420px;
-        font-size: 4.8rem;
+        font-size: $title-large;
         @include mobile-and-tablet {
             width: 100%;
         }
         @include tablet {
-            font-size: 3.6rem;
+            font-size: $title;
         }
     }
 }

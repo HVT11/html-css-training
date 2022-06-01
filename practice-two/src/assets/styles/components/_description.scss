@@ -1,7 +1,6 @@
 .description {
     margin: 0;
-    font-weight: 300;
-    font-size: 18px;
+    font-size: $desc;
     line-height: 30px;
     color: $text-color;
     &--large {
@@ -22,7 +21,7 @@
         font-size: 21px;
         line-height: 32px;
         @include tablet {
-            font-size: 1.6rem;
+            font-size: 16px;
         }
     }
     &--xs {
@@ -30,7 +29,7 @@
         height: 120px;
         font-weight: 400;
         font-size: 19px;
-        color: rgba(255, 255, 255, 0.9);
+        color: $silver-color;
         @include mobile-and-tablet {
             height: auto;
             font-size: 16px;
