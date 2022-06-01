@@ -15,8 +15,7 @@
         height: 434px;
     }
     @include mobile-and-tablet {
-        width: 100%;
-        height: auto;
+        @include fullwidth;
     }
     @include tablet {
         width: 100%;

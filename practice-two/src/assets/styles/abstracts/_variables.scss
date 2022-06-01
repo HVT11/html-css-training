@@ -2,10 +2,19 @@
 $primary-color: #458ff6;
 $white-color : #fff;
 $black-color: #000;
+$blackblue-color: #1f1534;
 $text-color: #7d7987;
+$silver-color: rgba(255, 255, 255, 0.9);
+$blue-color: #4089ed;
 $linear-background-color: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
 
 //Image Url
 $angle-left: url(".././images/angle-left.png");
 $angle-right: url(".././images/angle-right.png");
 $angle-right-sm: url(".././images/angle-right-mini.png");
+$angle-down: url(".././images/angle-down.png");
+
+//Font size
+$title-large: 48px;
+$title: 36px;
+$desc: 18px;

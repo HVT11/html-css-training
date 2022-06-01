@@ -4,9 +4,7 @@
     }
     &--medium {
         @include mobile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-center-vert;
         }
         @include tablet {
             width: 100%;
@@ -21,32 +19,10 @@
         }
     }
     &--small {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         @include mobile {
             flex-wrap: wrap;
             text-align: center;
-        }
-    }
-    &--xs {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        @include mobile {
-            flex-direction: column;
-        }
-    }
-    &--xxs {
-        margin-right: 110px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @include tablet {
-            margin-right: 20px;
-        }
-        @include mobile {
-            margin-right: 0;
         }
     }
 }

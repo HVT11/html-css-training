@@ -1,7 +1,5 @@
 .carousel {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column-center-vert;
     &-item {
         width: 1120px;
         height: 425px;
