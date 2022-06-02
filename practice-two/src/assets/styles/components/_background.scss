@@ -1,0 +1,106 @@
+.bg {
+    position: absolute;
+    @include mobile {
+        display: none;
+    }
+    &__cloud-left {
+        width: 853px;
+        height: 968px;
+        background-image: $cloud-left;
+        z-index: -1;
+        left: -17%;
+        top: -3%;
+        @include tablet {
+            width: 95%;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__cloud-right {
+        width: 547px;
+        height: 792px;
+        background-image: $cloud-right;
+        z-index: -1;
+        right: -16%;
+        bottom: 9%;
+        @include tablet {
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__point-small {
+        background-image: $point-sm;
+        width: 82px;
+        height: 115px;
+        &--left {
+            left: -16%;
+            top: 0;
+        }
+        &--right {
+            bottom: -20%;
+            right: -15%;
+            @include tablet {
+                bottom: -50%;
+                right: 0;
+            }
+        }
+    }
+    &__point-large {
+        background-image: $point-l;
+        width: 132px;
+        height: 115px;
+        z-index: -1;
+        &--right {
+            right: -2%;
+            top: 47%;
+            @include tablet {
+                right: 5%;
+                top: 62%;
+            }
+        }
+        &--left {
+            z-index: -1;
+            left: -1%;
+            top: 16%;
+            @include tablet {
+                left: 0;
+                top: 0;
+            }
+        }
+        &--outside {
+            left: -1%;
+            bottom: 22%;
+        }
+        &--outside-top {
+            right: -12%;
+            top: -19%;
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    &__point-medium {
+        background-image: $point-m;
+        width: 113px;
+        height: 96px;
+        &--inside-right {
+            right: 2%;
+            top: 3%;
+        }
+        &--inside-left {
+            left: -25%;
+            bottom: -12%;
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

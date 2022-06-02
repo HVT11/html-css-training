@@ -4,7 +4,7 @@
 
 // Utilities
 @import "utilities/spacing";
-@import "utilities/text";
+@import "utilities/vertical-align";
 @import "utilities/flex";
 
 //Vendor
@@ -21,7 +21,8 @@
 @import "components/title";
 @import "components/separate";
 @import "components/description";
-@import "components/img";
+@import "components/images";
+@import "components/background";
 @import "components/content";
 @import "components/carousel";
 @import "components/avatar";

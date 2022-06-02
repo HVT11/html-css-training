@@ -1,6 +1,6 @@
 .margin-bottom-large {
     margin-bottom: 80px !important;
-    @include mobile-and-tablet {
+    @include all-devices {
         margin-bottom: 30px !important;
     }
 }
@@ -16,7 +16,7 @@
 
 .margin-top-large {
     margin-top: 40px !important;
-    @include mobile-and-tablet {
+    @include all-devices {
         margin-top: 20px !important;
     }
 }

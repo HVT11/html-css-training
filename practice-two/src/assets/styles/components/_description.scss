@@ -9,8 +9,8 @@
     }
     &--small {
         width: 392px;
-        @include mobile-and-tablet {
-            font-size: 14px;
+        @include all-devices {
+            font-size: 1.4rem;
             line-height: 22px;
             width: 100%;
         }
@@ -18,21 +18,21 @@
     &--xl {
         margin-top: 20px;
         width: 440px;
-        font-size: 21px;
+        font-size: 2.1rem;
         line-height: 32px;
         @include tablet {
-            font-size: 16px;
+            font-size: 1.6rem;
         }
     }
     &--xs {
         width: 420px;
         height: 120px;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 1.9rem;
         color: $silver-color;
-        @include mobile-and-tablet {
+        @include all-devices {
             height: auto;
-            font-size: 16px;
+            font-size: 1.6rem;
             line-height: 20px;
             margin: 10px 0 10px;
         }
@@ -40,7 +40,7 @@
             width: 50%;
         }
     }
-    @include mobile-and-tablet {
+    @include all-devices {
         width: 100%;
     }
 }

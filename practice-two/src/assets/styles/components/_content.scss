@@ -12,7 +12,7 @@
     }
     &--large {
         margin-right: 110px;
-        @include mobile-and-tablet {
+        @include all-devices {
             width: 100%;
             margin: 0;
             margin-top: 20px;

@@ -1,0 +1,24 @@
+.img {
+    &--large {
+        width: 693px;
+        height: 598px;
+        & img {
+            width: 100%;
+        }
+    }
+    &--medium {
+        width: 650px;
+        height: 477px;
+    }
+    &--small {
+        width: 655px;
+        height: 434px;
+    }
+    @include all-devices {
+        @include fullwidth;
+    }
+    @include tablet {
+        width: 100%;
+    }
+}
+

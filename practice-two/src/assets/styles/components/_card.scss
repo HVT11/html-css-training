@@ -22,7 +22,7 @@
         height: 512px;
         margin: 0 18px;
         overflow: hidden;
-        @include mobile-and-tablet {
+        @include all-devices {
             margin-bottom: 30px;
         }
         @include mobile {
@@ -48,18 +48,18 @@
         color: $black-color;
         &--small {
             margin: 0;
-            font-size: 21px;
+            font-size: 2.1rem;
             line-height: 32px;
         }
         &--medium {
             margin-bottom: 0;
-            font-size: 24px;
+            font-size: 2.4rem;
             line-height: 56px;
         }
     }
     &__description {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 28px;
         color: $text-color;
     }
@@ -69,7 +69,7 @@
         text-decoration: none;
         &__text {
             font-weight: 600;
-            font-size: 17px;
+            font-size: 1.7rem;
             line-height: 28px;
             color: $blue-color;
             margin-right: 10px;

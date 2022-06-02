@@ -1,16 +1,17 @@
 .footer {
+    width: 100%;
     position: relative;
     height: 432px;
     margin-top: 200px;
     background: $linear-background-color;
-    @include mobile-and-tablet {
+    @include all-devices {
         height: auto;
     }
     @include hide-scroll;
     &-section {
         padding-top: 110px;
         display: flex;
-        @include mobile-and-tablet {
+        @include all-devices {
             flex-direction: column;
             padding: 20px 10px 0;
 
@@ -20,7 +21,7 @@
         flex: 1;
         display: flex;
         justify-content: space-around;
-        @include mobile-and-tablet {
+        @include all-devices {
             flex-wrap: wrap;
         }
         &__element {
@@ -30,7 +31,7 @@
         &__heading {
             margin: 0;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 2rem;
             line-height: 60px;
             padding-top: 12px;
             color: $white-color;
@@ -41,7 +42,7 @@
         }
         &__item {
             font-weight: 300;
-            font-size: 18px;
+            font-size: $desc;
             line-height: 38px;
             color: $white-color;
             margin-bottom: 8px;
@@ -58,14 +59,15 @@
             background-color: $white-color;
             color: $primary-color;
             font-weight: 700;
-            font-size: 26px;
+            font-size: 2.6rem;
             line-height: 33px;
             padding: 4px;
         }
         &__name {
+            margin: 24px;
             margin-left: 12px;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 2.4rem;
             line-height: 30px;
             color: $white-color;
         }
@@ -74,7 +76,7 @@
         margin-top: 12px;
         width: 379px;
         font-weight: 300;
-        font-size: 18px;
+        font-size: $desc;
         line-height: 28px;
         color: $white-color;
         @include mobile {
@@ -84,7 +86,7 @@
     &-branch-copyright {
         margin-top: 23px;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 28px;
         color: $white-color;
     }

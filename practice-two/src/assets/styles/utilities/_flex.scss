@@ -16,7 +16,7 @@
     }
     &--mg-left {
         margin-left: 140px;
-        @include mobile-and-tablet {
+        @include all-devices {
             margin: 0;
         }
     }

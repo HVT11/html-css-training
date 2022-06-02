@@ -5,7 +5,7 @@
     line-height: 56px;
     &--medium {
         font-size: $title;
-        @include mobile-and-tablet {
+        @include all-devices {
             text-align: center;
         }
     }
@@ -15,7 +15,7 @@
     &--large {
         width: 420px;
         font-size: $title-large;
-        @include mobile-and-tablet {
+        @include all-devices {
             width: 100%;
         }
         @include tablet {
